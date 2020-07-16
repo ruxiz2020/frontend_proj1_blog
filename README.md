@@ -1,6 +1,6 @@
 ## The website can be viewed on
 
-* [personal blog site](https://ruxiz2020.github.io/frontend_proj1_blog/#)
+* [personal blog site](https://ruxiz2020.github.io/frontend_proj1_blog/index.html)
 
 
 ## Requirement of project:
