@@ -21,6 +21,5 @@ Make sure to see the earlier section on Development Strategy if you are unsure h
 ## Run demo
 
 `````bash
-cd docs
 python -m  http.server 5000 &.
 `````
