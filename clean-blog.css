@@ -70,7 +70,7 @@ hr.small {
   }
   .navbar-custom .navbar-brand:hover,
   .navbar-custom .navbar-brand:focus {
-    color: rgba(255, 255, 255, 0.8);
+    color: white;
   }
   .navbar-custom .nav li a {
     color: white;
@@ -78,8 +78,39 @@ hr.small {
   }
   .navbar-custom .nav li a:hover,
   .navbar-custom .nav li a:focus {
-    color: rgba(255, 255, 255, 0.8);
+    color: lightblue;
   }
+}
+
+@media only screen and (min-width: 480px) {
+  .navbar-custom {
+    background: dimgray;
+    border-bottom: 1px solid transparent;
+  }
+  .navbar-custom .navbar-brand {
+    color: white;
+    padding: 10px;
+  }
+  .navbar-custom .navbar-brand:hover,
+  .navbar-custom .navbar-brand:focus {
+    color: white;
+  }
+  .navbar-custom .nav li a {
+    color: white;
+    padding: 10px;
+  }
+  .navbar-custom .nav li a:hover,
+  .navbar-custom .nav li a:focus {
+    color: lightblue;
+  }
+}
+
+.navbar-fixed-top,
+.navbar-fixed-bottom {
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 1030;
 }
 
 .post-preview > a {
@@ -150,6 +181,43 @@ display: inline;
   width: 48px;
   font-weight: bold;
 }
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media (min-width: 320px) {
+  .container {
+    width: 320px;
+  }
+}
+@media (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+@media (min-width: 2800px) {
+  .container {
+    width: 2400px;
+  }
+}
+
 .flex-container-home {
   display: flex;
 }
@@ -160,10 +228,22 @@ display: inline;
   padding: 20px;
   font-size: 30px;
 }
+@media (min-width: 480px) {
+  .flex-container-home {
+    margin: 2px;
+    padding: 2px;
+  }
+}
+@media (min-width: 768px) {
+  .flex-container-home {
+    margin: 5px;
+    padding: 10px;
+  }
+}
 .image-home-flex {
   display: flex;
-  flex-wrap: wrap;
   margin: -20px;
+  height: 50px;
 }
 .image-home-flex {
   display: block;
@@ -171,6 +251,18 @@ display: inline;
   width: 100%;
   height: 100%; /* set to 'auto' in IE11 to avoid distortions */
 }
+@media (min-width: 480px) {
+  .image-home-flex {
+    flex: 1 1 auto;
+  }
+}
+@media (min-width: 768px) {
+  .image-home-flex {
+    flex-wrap: wrap;
+    width: 100%;
+  }
+}
+/* photo gallery*/
 .imagewrapper {
   display: flex;
   justify-content: center;
